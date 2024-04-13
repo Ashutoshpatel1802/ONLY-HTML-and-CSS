@@ -1,0 +1,295 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .navbar {
+    background-color: #333;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+  }
+  
+  .menu {
+    list-style-type: none;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  /* Global styles and other styles */
+
+/* Navbar styles */ 
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    font-family: 'Your Custom Font', sans-serif; /* Use a custom font */
+  }
+  
+  .logo-text {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo-text:hover {
+    text-decoration: underline;
+  }
+  
+  /* Global styles and navbar styles (as provided in the previous code)
+
+/* Content section styles */
+.content-section {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .content-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Search bar styles */
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-form button:hover {
+    background-color: #555;
+  }
+  
+  
+/* Global styles and navbar styles (as provided in the previous code) */
+
+/* Blog section styles */
+.blog-section {
+    padding: 50px 0;
+  }
+  
+  .blog-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - 20px), 1fr)); /* Adjust width for responsiveness */
+    gap: 20px; /* Row gap between cards */
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .blog-slider {
+      grid-template-columns: repeat(auto-fill, minmax(calc(50% - 20px), 1fr)); /* Adjust width for mobile */
+    }
+  }
+  
+  
+  /* Global styles and navbar styles (as provided in the previous code) */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+}
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+p{
+    max-width: 200px;
+}  
+
+
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* To display limited lines on cards */
+  .blog-card .excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines you want to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+/* Blog info section styles */
+.blog-info {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.blog-info .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-info h1 {
+  margin-bottom: 10px;
+}
+
+.blog-info .blog-date {
+  color: #666;
+}
+
+.blog-info .blog-summary {
+  font-style: italic;
+}
+
+
+

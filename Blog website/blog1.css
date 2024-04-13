@@ -1,0 +1,253 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .navbar {
+    background-color: #333;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+  }
+  
+  .menu {
+    list-style-type: none;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  /* Global styles and other styles */
+
+/* Navbar styles */ 
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    font-family: 'Your Custom Font', sans-serif; /* Use a custom font */
+  }
+  
+  .logo-text {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo-text:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dropdown menu styles */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Blog info section styles */
+.blog-info {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.blog-info .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blog-info h1 {
+    margin-bottom: 10px;
+}
+
+.blog-info .blog-date {
+    color: #666;
+}
+
+.blog-info .blog-summary {
+    font-style: italic;
+}
+
+
+
+  /* Blog content section styles */
+.blog-content {
+    padding: 50px 0; /* Increased padding for better spacing */
+}
+
+.blog-content .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: justify; /* Align text to justify for better readability */
+}
+
+.blog-content h2 {
+    margin-bottom: 20px; /* Increased margin for better separation */
+}
+
+.blog-content p {
+    margin-bottom: 30px; /* Increased margin for better separation */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Image styles */
+.small-img, .big-img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin-bottom: 30px; /* Increased margin for better separation */
+    border-radius: 8px; /* Optional: Add rounded corners for a nicer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
+
+
+
+/* Review form styles */
+.review-form {
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.review-form h2 {
+    margin-bottom: 20px;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #555;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+}
+  
+  .footer-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+.about-page p{
+    max-width: 200px;
+}  
+.refer{
+    color: tomato;
+    
+}
+h2{
+    color: red;
+}
